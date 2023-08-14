@@ -1,0 +1,223 @@
+:root {
+  --color-text: #f7f7f7;
+  --clor-text-small: #bfc1c8;
+  --color-nav-hover-acttive: #009ad8;
+  --main-color-text: #bfc1c8;
+  --color-bg: #1e202b;
+  --color-secondary-bg: #323544;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color-text);
+  background: var(--color-bg)
+}
+
+
+/* ==============================> Navbar */
+.tltLogo {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.smTltLogo {
+  font-size: 0.714286rem !important;
+  display: block;
+  color: var(--clor-text-small)
+}
+
+.navContent ul li a {
+  color: var(--color-text);
+  padding: 5px 25px;
+  border-radius: 30px;
+  color: white;
+  transition: 0.3s ease;
+  font-weight: 400;
+}
+
+.nav-pills .nav-link {
+  border: 2px solid #1e202b;
+  margin-right: 5px;
+
+}
+
+.nav-pills .nav-link.active {
+  border: 2px solid #009ad8;
+  color: var(--color-nav-hover-acttive) !important;
+  background-color: black !important;
+}
+
+.navContent ul li {
+  margin-right: 5px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  padding: 5px 25px;
+  border: 2px solid #009ad8;
+  color: var(--color-nav-hover-acttive);
+}
+
+.navbar-toggler-icon {
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: white;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.nav {
+
+  display: contents;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+
+/* ==========================> header */
+.bg-contain {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px 0;
+  min-height: 350px;
+}
+
+
+#submit {
+  padding: 4px 30px;
+  border: 2px solid #009ad8;
+  background-color: #009ad8;
+  border-radius: 20px;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  font-size: 20px;
+  z-index: 999999;
+
+}
+
+#search,
+#serch-sub {
+  position: relative;
+  padding: 13px 15px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+
+}
+
+#search::placeholder,
+#serch-sub::placeholder {
+  color: gray;
+}
+
+.form-control:focus {
+
+  outline: 0;
+  box-shadow: none;
+}
+
+/* =========================> content*/
+.custom-all {
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.forecast {
+  color: white;
+  background-color: var(--color-secondary-bg);
+  border: 2px solid #323544;
+  border-radius: 10px;
+  font-family: cursive;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+.forecast-icon span {
+  margin-right: 15px;
+}
+
+.forecast>div:nth-of-type(2) {
+  background-color: #292c38;
+}
+
+.condition {
+  color: #009ad8;
+  margin: 20px 0;
+}
+
+.header-day {
+  background-color: rgb(0 0 0 / 10%);
+
+}
+
+.location {
+  font-size: 22px;
+}
+
+.nom-degree {
+
+  font-weight: 700;
+  font-size: 65px;
+  margin-right: 30px
+}
+
+.nom-max-degre {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* =======================>  footer */
+
+#subscribe {
+
+  border: 2px solid #009ad8;
+  background-color: #009ad8;
+  border-radius: 20px;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  padding: 8px 10px;
+  font-size: 16px;
+  z-index: 999999;
+}
+
+.site-footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 20px;
+  font-size: 1.4285714286em;
+}
+
+.site-footer {
+  background-color: var(--color-secondary-bg);
+}
+
+.site-footer .social-links a:hover {
+  background: #009ad8;
+  color: white;
+}
+
+.site-footer .social-links a i {
+  margin-top: 10px;
+}

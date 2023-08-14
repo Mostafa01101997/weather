@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <!-- ^=======> Google fonts link -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+  <!-- ^=======> Bootstrap Style Sheet -->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <!-- ^=======> Bootstrap Icos -->
+  <link rel="stylesheet" href="CSS/bootstrap-icons.css">
+  <!-- ^=======> Font awesome library -->
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <!-- ^=======> Main Style sheet -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg p-5 navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand  " href="#">
+        <img src="images/logo.png" alt="" width="60" height="35" class="d-inline-block align-middle">
+        <div class="logo d-inline-block align-middle">
+          <h3 class="tltLogo">Weather</h3>
+          <small class="smTltLogo">tagline goes here</small>
+        </div>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navContent    justify-content-end" id="navbarSupportedContent">
+        <ul class="nav nav-pills float-end">
+          <li class="nav-item">
+            <a class="nav-link active rounded-pill" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="#">Photo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-pill" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="bg-contain">
+    <div class="container pt-3 pb-5">
+      <div class="input-group mb-3 pt-3 pb-5">
+        <input type="text" id="search" class="form-control" placeholder="Find Your Location"
+          aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="button" value="Find" class="text-white " id="submit">
+      </div>
+    </div>
+  </div>
+  <div class="climate ">
+    <div class="container ">
+      <div class="row forecast" id="forecast">
+       
+        
+       
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer pt-5 pb-2">
+    <div class="container">
+      <div class="row pt-3 pb-3">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form position-relative">
+            <input type="text" id="serch-sub" class="form-control " placeholder="Enter your email to subscribe...">
+            <input type="submit" id="subscribe" value="Subscribe">
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="colophon">Copyright 2023 Company name. Designed by Mostafa. All rights reserved</p>
+    </div>
+  </footer> <!-- .site-footer -->
+
+
+  <script src="JS/index.js"></script> 
+  <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
